@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83DDD92516CDAD8E00716A5F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DDD92416CDAD8E00716A5F /* Cocoa.framework */; };
+		83DDD92F16CDAD8E00716A5F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83DDD92D16CDAD8E00716A5F /* InfoPlist.strings */; };
+		83DDD93116CDAD8E00716A5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDD93016CDAD8E00716A5F /* main.m */; };
+		83DDD93516CDAD8E00716A5F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 83DDD93316CDAD8E00716A5F /* Credits.rtf */; };
+		83DDD93816CDAD8E00716A5F /* CMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDD93716CDAD8E00716A5F /* CMAppDelegate.m */; };
+		83DDD93B16CDAD8E00716A5F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83DDD93916CDAD8E00716A5F /* MainMenu.xib */; };
+		83DDD94816CDB6E200716A5F /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DDD94716CDB6E200716A5F /* SceneKit.framework */; };
+		83DDD94B16CDBFAD00716A5F /* CMSceneKitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDD94A16CDBFAD00716A5F /* CMSceneKitView.m */; };
+		83DDD94D16CDC03000716A5F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DDD94C16CDC02F00716A5F /* QuartzCore.framework */; };
+		83DDD95016CE0A6100716A5F /* CMOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDD94F16CE0A6000716A5F /* CMOpenGLView.m */; };
+		83DDD95216CE0DFC00716A5F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DDD95116CE0DFC00716A5F /* GLKit.framework */; };
+		83DDD95416CE0E0900716A5F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DDD95316CE0E0800716A5F /* OpenGL.framework */; };
+		83DDD95716D1E3D600716A5F /* CMCenteredOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDD95616D1E3D600716A5F /* CMCenteredOpenGLView.m */; };
+		83F6E13B16D2E8B5005380FB /* sample_iphone_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 83F6E13A16D2E8B5005380FB /* sample_iphone_settings.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		83DDD92116CDAD8E00716A5F /* GLPixelAccuratePerspective.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLPixelAccuratePerspective.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83DDD92416CDAD8E00716A5F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		83DDD92716CDAD8E00716A5F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		83DDD92816CDAD8E00716A5F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		83DDD92916CDAD8E00716A5F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		83DDD92C16CDAD8E00716A5F /* GLPixelAccuratePerspective-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLPixelAccuratePerspective-Info.plist"; sourceTree = "<group>"; };
+		83DDD92E16CDAD8E00716A5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		83DDD93016CDAD8E00716A5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83DDD93216CDAD8E00716A5F /* GLPixelAccuratePerspective-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLPixelAccuratePerspective-Prefix.pch"; sourceTree = "<group>"; };
+		83DDD93416CDAD8E00716A5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		83DDD93616CDAD8E00716A5F /* CMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMAppDelegate.h; sourceTree = "<group>"; };
+		83DDD93716CDAD8E00716A5F /* CMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMAppDelegate.m; sourceTree = "<group>"; };
+		83DDD93A16CDAD8E00716A5F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		83DDD94716CDB6E200716A5F /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		83DDD94916CDBFAD00716A5F /* CMSceneKitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMSceneKitView.h; sourceTree = "<group>"; };
+		83DDD94A16CDBFAD00716A5F /* CMSceneKitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMSceneKitView.m; sourceTree = "<group>"; };
+		83DDD94C16CDC02F00716A5F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		83DDD94E16CE0A6000716A5F /* CMOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMOpenGLView.h; sourceTree = "<group>"; };
+		83DDD94F16CE0A6000716A5F /* CMOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMOpenGLView.m; sourceTree = "<group>"; };
+		83DDD95116CE0DFC00716A5F /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		83DDD95316CE0E0800716A5F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		83DDD95516D1E3D500716A5F /* CMCenteredOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCenteredOpenGLView.h; sourceTree = "<group>"; };
+		83DDD95616D1E3D600716A5F /* CMCenteredOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCenteredOpenGLView.m; sourceTree = "<group>"; };
+		83F6E13A16D2E8B5005380FB /* sample_iphone_settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample_iphone_settings.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83DDD91E16CDAD8E00716A5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83DDD95416CE0E0900716A5F /* OpenGL.framework in Frameworks */,
+				83DDD95216CE0DFC00716A5F /* GLKit.framework in Frameworks */,
+				83DDD94D16CDC03000716A5F /* QuartzCore.framework in Frameworks */,
+				83DDD94816CDB6E200716A5F /* SceneKit.framework in Frameworks */,
+				83DDD92516CDAD8E00716A5F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83DDD91816CDAD8E00716A5F = {
+			isa = PBXGroup;
+			children = (
+				83DDD92A16CDAD8E00716A5F /* GLPixelAccuratePerspective */,
+				83DDD92316CDAD8E00716A5F /* Frameworks */,
+				83DDD92216CDAD8E00716A5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83DDD92216CDAD8E00716A5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83DDD92116CDAD8E00716A5F /* GLPixelAccuratePerspective.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83DDD92316CDAD8E00716A5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83DDD95316CE0E0800716A5F /* OpenGL.framework */,
+				83DDD95116CE0DFC00716A5F /* GLKit.framework */,
+				83DDD94C16CDC02F00716A5F /* QuartzCore.framework */,
+				83DDD94716CDB6E200716A5F /* SceneKit.framework */,
+				83DDD92416CDAD8E00716A5F /* Cocoa.framework */,
+				83DDD92616CDAD8E00716A5F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83DDD92616CDAD8E00716A5F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83DDD92716CDAD8E00716A5F /* AppKit.framework */,
+				83DDD92816CDAD8E00716A5F /* CoreData.framework */,
+				83DDD92916CDAD8E00716A5F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		83DDD92A16CDAD8E00716A5F /* GLPixelAccuratePerspective */ = {
+			isa = PBXGroup;
+			children = (
+				83DDD93616CDAD8E00716A5F /* CMAppDelegate.h */,
+				83DDD93716CDAD8E00716A5F /* CMAppDelegate.m */,
+				83DDD95516D1E3D500716A5F /* CMCenteredOpenGLView.h */,
+				83DDD95616D1E3D600716A5F /* CMCenteredOpenGLView.m */,
+				83DDD94E16CE0A6000716A5F /* CMOpenGLView.h */,
+				83DDD94F16CE0A6000716A5F /* CMOpenGLView.m */,
+				83DDD94916CDBFAD00716A5F /* CMSceneKitView.h */,
+				83DDD94A16CDBFAD00716A5F /* CMSceneKitView.m */,
+				83DDD93916CDAD8E00716A5F /* MainMenu.xib */,
+				83DDD94116CDB33100716A5F /* Resources */,
+				83DDD92B16CDAD8E00716A5F /* Supporting Files */,
+			);
+			path = GLPixelAccuratePerspective;
+			sourceTree = "<group>";
+		};
+		83DDD92B16CDAD8E00716A5F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83DDD92C16CDAD8E00716A5F /* GLPixelAccuratePerspective-Info.plist */,
+				83DDD92D16CDAD8E00716A5F /* InfoPlist.strings */,
+				83DDD93016CDAD8E00716A5F /* main.m */,
+				83DDD93216CDAD8E00716A5F /* GLPixelAccuratePerspective-Prefix.pch */,
+				83DDD93316CDAD8E00716A5F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83DDD94116CDB33100716A5F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83DDD94216CDB33100716A5F /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		83DDD94216CDB33100716A5F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				83F6E13A16D2E8B5005380FB /* sample_iphone_settings.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83DDD92016CDAD8E00716A5F /* GLPixelAccuratePerspective */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83DDD93E16CDAD8E00716A5F /* Build configuration list for PBXNativeTarget "GLPixelAccuratePerspective" */;
+			buildPhases = (
+				83DDD91D16CDAD8E00716A5F /* Sources */,
+				83DDD91E16CDAD8E00716A5F /* Frameworks */,
+				83DDD91F16CDAD8E00716A5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLPixelAccuratePerspective;
+			productName = GLPixelAccuratePerspective;
+			productReference = 83DDD92116CDAD8E00716A5F /* GLPixelAccuratePerspective.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83DDD91916CDAD8E00716A5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Chris Miles";
+			};
+			buildConfigurationList = 83DDD91C16CDAD8E00716A5F /* Build configuration list for PBXProject "GLPixelAccuratePerspective" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 83DDD91816CDAD8E00716A5F;
+			productRefGroup = 83DDD92216CDAD8E00716A5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83DDD92016CDAD8E00716A5F /* GLPixelAccuratePerspective */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83DDD91F16CDAD8E00716A5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83DDD92F16CDAD8E00716A5F /* InfoPlist.strings in Resources */,
+				83DDD93516CDAD8E00716A5F /* Credits.rtf in Resources */,
+				83DDD93B16CDAD8E00716A5F /* MainMenu.xib in Resources */,
+				83F6E13B16D2E8B5005380FB /* sample_iphone_settings.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83DDD91D16CDAD8E00716A5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83DDD93116CDAD8E00716A5F /* main.m in Sources */,
+				83DDD93816CDAD8E00716A5F /* CMAppDelegate.m in Sources */,
+				83DDD94B16CDBFAD00716A5F /* CMSceneKitView.m in Sources */,
+				83DDD95016CE0A6100716A5F /* CMOpenGLView.m in Sources */,
+				83DDD95716D1E3D600716A5F /* CMCenteredOpenGLView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		83DDD92D16CDAD8E00716A5F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83DDD92E16CDAD8E00716A5F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		83DDD93316CDAD8E00716A5F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83DDD93416CDAD8E00716A5F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		83DDD93916CDAD8E00716A5F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83DDD93A16CDAD8E00716A5F /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83DDD93C16CDAD8E00716A5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		83DDD93D16CDAD8E00716A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		83DDD93F16CDAD8E00716A5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLPixelAccuratePerspective/GLPixelAccuratePerspective-Prefix.pch";
+				INFOPLIST_FILE = "GLPixelAccuratePerspective/GLPixelAccuratePerspective-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		83DDD94016CDAD8E00716A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GLPixelAccuratePerspective/GLPixelAccuratePerspective-Prefix.pch";
+				INFOPLIST_FILE = "GLPixelAccuratePerspective/GLPixelAccuratePerspective-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83DDD91C16CDAD8E00716A5F /* Build configuration list for PBXProject "GLPixelAccuratePerspective" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83DDD93C16CDAD8E00716A5F /* Debug */,
+				83DDD93D16CDAD8E00716A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83DDD93E16CDAD8E00716A5F /* Build configuration list for PBXNativeTarget "GLPixelAccuratePerspective" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83DDD93F16CDAD8E00716A5F /* Debug */,
+				83DDD94016CDAD8E00716A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83DDD91916CDAD8E00716A5F /* Project object */;
+}
