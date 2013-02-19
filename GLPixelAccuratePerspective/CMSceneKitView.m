@@ -14,6 +14,13 @@
 #define RectHeightf (RectHeight * 1.0f)
 
 
+@interface CMSceneKitView ()
+@property (strong) SCNCamera *camera;
+@property (strong) SCNNode *cameraNode;
+@property (strong) SCNNode *planeNode;
+@end
+
+
 @implementation CMSceneKitView
 
 - (id)initWithFrame:(NSRect)frameRect options:(NSDictionary *)options
@@ -27,38 +34,45 @@
 
 - (void)awakeFromNib
 {
-    // Need to delay enough for view size to be restored by AppKit.
-    [self performSelector:@selector(setupScene) withObject:nil afterDelay:0.0];
+    [self setupScene];
 }
 
 - (void)setupScene
 {
-    self.allowsCameraControl = YES;
+    //self.allowsCameraControl = YES;
     
     SCNScene *scene = [SCNScene scene];
     self.scene = scene;
     
-    SCNCamera *camera = [SCNCamera camera];
-    camera.zNear = 0.1;
-    camera.zFar = 100.0;
-    SCNNode *cameraNode = [SCNNode node];
-    cameraNode.camera = camera;
-    [scene.rootNode addChildNode:cameraNode];
+    self.camera = [SCNCamera camera];
+    self.camera.zNear = 0.1;
+    self.camera.zFar = 100.0;
+    self.cameraNode = [SCNNode node];
+    self.cameraNode.camera = self.camera;
+    [scene.rootNode addChildNode:self.cameraNode];
     
-    CGSize viewSize = self.bounds.size;
-    CGFloat aspect = viewSize.width/viewSize.height;
-    CGFloat scale = RectHeightf / viewSize.height;
-    NSLog(@"View bounds: %@ aspect: %f scale: %f", NSStringFromRect(self.bounds), aspect, scale);
-    
-    SCNPlane *plane = [SCNPlane planeWithWidth:scale*(RectWidthf/RectHeightf) height:scale];
+    SCNPlane *plane = [SCNPlane planeWithWidth:(RectWidthf/RectHeightf) height:1.0f];
     plane.firstMaterial.diffuse.contents = [NSImage imageNamed:@"sample_iphone_settings"];
     plane.firstMaterial.diffuse.magnificationFilter = SCNNoFiltering;
     plane.firstMaterial.diffuse.minificationFilter = SCNNoFiltering;
     plane.firstMaterial.doubleSided = YES;
     
-    SCNNode *planeNode = [SCNNode nodeWithGeometry:plane];
-    [scene.rootNode addChildNode:planeNode];
-    
+    self.planeNode = [SCNNode nodeWithGeometry:plane];
+    [scene.rootNode addChildNode:self.planeNode];
+
+    [self configureCameraWithViewSize:self.bounds.size];
+}
+
+- (void)setFrameSize:(NSSize)newSize
+{
+    [super setFrameSize:newSize];
+    [self configureCameraWithViewSize:newSize];
+}
+
+- (void)configureCameraWithViewSize:(NSSize)viewSize
+{
+    CGFloat aspect = viewSize.width/viewSize.height;
+
     CGFloat yFov = 25.0;
     CGFloat zDist = 0.5 / tan((M_PI/180.0)*yFov/2.0);
     CGFloat xFov = (180.0/M_PI) * 2.0 * atan(0.5*aspect / zDist);
@@ -66,12 +80,14 @@
     CGPoint adjustment = CGPointZero;
     if (fmod(viewSize.width, 2) != 0) adjustment.x += (0.5f * 1.0f/viewSize.width);
     if (fmod(viewSize.height, 2) != 0) adjustment.y += (0.5f * 1.0f/viewSize.height);
-
-    //cameraNode.position = SCNVector3Make(0.0f, 0.0f, zDist);
-    cameraNode.position = SCNVector3Make(adjustment.x, adjustment.y, zDist);
     
-    camera.xFov = xFov;
-    camera.yFov = yFov;
+    self.cameraNode.position = SCNVector3Make(adjustment.x, adjustment.y, zDist);
+    
+    self.camera.xFov = xFov;
+    self.camera.yFov = yFov;
+    
+    CGFloat scale = RectHeightf / viewSize.height;
+    self.planeNode.scale = SCNVector3Make(scale, scale, scale);
 }
 
 @end
