@@ -98,6 +98,10 @@ static GLfloat rectVertexData[kRectVertexDataLength] =
 {
     [self.openGLContext makeCurrentContext];
     
+    enum { kShortVersionLength = 32 }; // more than enough to hold the version
+    const GLubyte * strVersion = glGetString(GL_VERSION); // get version string
+    NSLog(@"GL_VERSION: %s", strVersion);
+
     NSString *imageFile = [[NSBundle mainBundle] pathForResource:@"sample_iphone_settings" ofType:@"png"];
     NSDictionary *options = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:GLKTextureLoaderOriginBottomLeft];
     _textureInfo = [GLKTextureLoader textureWithContentsOfFile:imageFile options:options error:NULL];
