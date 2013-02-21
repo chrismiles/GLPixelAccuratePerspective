@@ -66,7 +66,11 @@
 - (void)setFrameSize:(NSSize)newSize
 {
     [super setFrameSize:newSize];
+    
+    [SCNTransaction begin];
+    [SCNTransaction setDisableActions:YES];
     [self configureCameraWithViewSize:newSize];
+    [SCNTransaction commit];
 }
 
 - (void)configureCameraWithViewSize:(NSSize)viewSize
